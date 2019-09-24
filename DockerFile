@@ -1,5 +1,0 @@
-FROM openjdk:7
-CMD ["java", "Main"]
-COPY spring-boot-app-0.0.1-SNAPSHOT.war /app.war
-# run application with this command line
-CMD ["/usr/bin/java", "-jar", "-Dspring.profiles.active=default", "/app.war"]

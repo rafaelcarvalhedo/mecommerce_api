@@ -14,7 +14,11 @@ public class MEcommerceApplication {
     private String allowedOrigins;
 
     public static void main(String[] args) {
-        SpringApplication.run(MEcommerceApplication.class, args);
+        try{
+            SpringApplication.run(MEcommerceApplication.class, args);
+        }catch (Exception ex){
+            ex.printStackTrace();
+        }
     }
 
     @Bean
